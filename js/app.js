@@ -4,19 +4,38 @@ function generateTrip() {
   const result = document.getElementById("result");
 
   if (!destination) {
-    result.innerHTML = "⚠️ Digite um destino primeiro.";
+    result.innerHTML = "⚠️ Informe um destino.";
     return;
   }
 
-  result.innerHTML = "🧠 Analisando sua viagem...";
+  result.classList.add("loading");
+  result.innerHTML = "🧠 Gerando experiência personalizada...";
 
   setTimeout(() => {
-    const responses = {
-      eco: `🌱 Viagem sustentável para ${destination} com foco em natureza e baixo impacto ambiental.`,
-      luxo: `✨ Experiência premium em ${destination} com hospedagens e serviços exclusivos.`,
-      aventura: `🏔️ Jornada de aventura em ${destination} com trilhas, exploração e adrenalina.`
+    const base = {
+      eco: {
+        emoji: "🌱",
+        text: "Experiência sustentável",
+        extra: "com foco em natureza, transporte consciente e hospedagens ecológicas."
+      },
+      luxo: {
+        emoji: "✨",
+        text: "Experiência premium",
+        extra: "com hotéis 5 estrelas, gastronomia refinada e conforto absoluto."
+      },
+      aventura: {
+        emoji: "🏔️",
+        text: "Experiência de aventura",
+        extra: "com trilhas, exploração e atividades de alta adrenalina."
+      }
     };
 
-    result.innerHTML = responses[type];
-  }, 900);
+    const trip = base[type];
+
+    result.classList.remove("loading");
+    result.innerHTML = `
+      ${trip.emoji} <b>${trip.text} em ${destination}</b><br><br>
+      ${trip.extra}
+    `;
+  }, 1100);
 }
