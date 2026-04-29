@@ -11,7 +11,9 @@
 
 <body>
 
-<main>
+<div class="container">
+
+  <!-- CARD PRINCIPAL -->
   <section class="card">
     <h2>EcoTrip AI 🌍</h2>
 
@@ -27,7 +29,19 @@
 
     <div id="result"></div>
   </section>
-</main>
+
+  <!-- CHATBOT -->
+  <section class="chat">
+    <h3>💬 Assistente de Viagem</h3>
+
+    <input id="chatInput" type="text" placeholder="Pergunte algo (ex: o que fazer em Paris?)">
+
+    <button onclick="askBot()">Perguntar</button>
+
+    <div id="chatResult"></div>
+  </section>
+
+</div>
 
 <script src="js/app.js"></script>
 
