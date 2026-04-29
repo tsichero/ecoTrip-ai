@@ -15,17 +15,16 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
-  transition: transform 0.2s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
+h2 {
+  margin-bottom: 15px;
 }
 
 input, select {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 8px 0;
   border-radius: 8px;
   border: 1px solid #ddd;
   outline: none;
@@ -39,23 +38,18 @@ button {
   background: #2ecc71;
   color: white;
   cursor: pointer;
-  transition: 0.2s;
+  margin-top: 10px;
 }
 
 button:hover {
   background: #27ae60;
-  transform: scale(1.03);
 }
 
 #result {
   margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f5f5f5;
   font-weight: bold;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.4s ease;
-}
-
-#result.show {
-  opacity: 1;
-  transform: translateY(0);
+  min-height: 40px;
 }
