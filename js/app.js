@@ -8,14 +8,13 @@ function generateTrip() {
     return;
   }
 
-  // efeito de IA trabalhando
-  result.innerHTML = "🧠 Analisando destino...";
+  result.innerHTML = "🧠 Analisando sua viagem...";
 
   setTimeout(() => {
     const responses = {
-      eco: `🌱 Viagem sustentável para ${destination}`,
-      luxo: `✨ Experiência de luxo em ${destination}`,
-      aventura: `🏔️ Aventura intensa em ${destination}`
+      eco: `🌱 Viagem sustentável para ${destination} com foco em natureza e baixo impacto ambiental.`,
+      luxo: `✨ Experiência premium em ${destination} com hospedagens e serviços exclusivos.`,
+      aventura: `🏔️ Jornada de aventura em ${destination} com trilhas, exploração e adrenalina.`
     };
 
     result.innerHTML = responses[type];
