@@ -8,15 +8,16 @@ function generateTrip() {
     return;
   }
 
-  result.innerHTML = "🧠 Pensando na sua viagem...";
+  // efeito de IA trabalhando
+  result.innerHTML = "🧠 Analisando destino...";
 
   setTimeout(() => {
     const responses = {
       eco: `🌱 Viagem sustentável para ${destination}`,
-      luxo: `✨ Viagem de luxo para ${destination}`,
-      aventura: `🏔️ Aventura inesquecível em ${destination}`
+      luxo: `✨ Experiência de luxo em ${destination}`,
+      aventura: `🏔️ Aventura intensa em ${destination}`
     };
 
     result.innerHTML = responses[type];
-  }, 800);
+  }, 900);
 }
