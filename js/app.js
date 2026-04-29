@@ -5,6 +5,7 @@ function generateTrip() {
 
   if (!destination) {
     result.innerHTML = "⚠️ Digite um destino primeiro.";
+    result.classList.add("show");
     return;
   }
 
@@ -15,4 +16,10 @@ function generateTrip() {
   };
 
   result.innerHTML = responses[type];
+
+  // animação de entrada
+  result.classList.remove("show");
+  setTimeout(() => {
+    result.classList.add("show");
+  }, 50);
 }
