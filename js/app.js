@@ -8,11 +8,11 @@ function generateTrip() {
     return;
   }
 
-  const messages = {
-    eco: `🌱 Viagem sustentável para ${destination}: priorize transporte público e hospedagens ecológicas.`,
-    luxo: `✨ Viagem de luxo para ${destination}: hotéis premium e experiências exclusivas.`,
-    aventura: `🏔️ Aventura em ${destination}: trilhas, natureza e experiências intensas.`
+  const responses = {
+    eco: `🌱 Viagem sustentável para ${destination}`,
+    luxo: `✨ Viagem de luxo para ${destination}`,
+    aventura: `🏔️ Aventura em ${destination}`
   };
 
-  result.innerHTML = messages[type];
+  result.innerHTML = responses[type];
 }
