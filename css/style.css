@@ -1,13 +1,14 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
+  margin: 0;
   text-align: center;
 }
 
 .card {
   background: white;
   padding: 20px;
-  margin: 50px auto;
+  margin: 60px auto;
   width: 300px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -17,4 +18,21 @@ input, select, button {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
+  border-radius: 6px;
+}
+
+button {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #27ae60;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
 }
