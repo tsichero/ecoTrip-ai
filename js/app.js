@@ -8,34 +8,44 @@ function generateTrip() {
     return;
   }
 
-  result.classList.add("loading");
-  result.innerHTML = "🧠 Gerando experiência personalizada...";
+  result.innerHTML = "🧠 Planejando sua viagem...";
 
   setTimeout(() => {
-    const base = {
-      eco: {
-        emoji: "🌱",
-        text: "Experiência sustentável",
-        extra: "com foco em natureza, transporte consciente e hospedagens ecológicas."
-      },
-      luxo: {
-        emoji: "✨",
-        text: "Experiência premium",
-        extra: "com hotéis 5 estrelas, gastronomia refinada e conforto absoluto."
-      },
-      aventura: {
-        emoji: "🏔️",
-        text: "Experiência de aventura",
-        extra: "com trilhas, exploração e atividades de alta adrenalina."
-      }
+    const data = {
+      eco: `🌱 Viagem sustentável para ${destination} com foco em natureza e baixo impacto.`,
+      luxo: `✨ Experiência premium em ${destination} com hotéis 5 estrelas e serviços exclusivos.`,
+      aventura: `🏔️ Aventura em ${destination} com trilhas, exploração e experiências intensas.`
     };
 
-    const trip = base[type];
+    result.innerHTML = data[type];
+  }, 900);
+}
 
-    result.classList.remove("loading");
-    result.innerHTML = `
-      ${trip.emoji} <b>${trip.text} em ${destination}</b><br><br>
-      ${trip.extra}
-    `;
-  }, 1100);
+/* CHATBOT SIMPLES (PORTFÓLIO PREMIUM) */
+function askBot() {
+  const input = document.getElementById("chatInput").value.toLowerCase();
+  const chat = document.getElementById("chatResult");
+
+  if (!input) {
+    chat.innerHTML = "⚠️ Faça uma pergunta.";
+    return;
+  }
+
+  chat.innerHTML = "💭 Pensando...";
+
+  setTimeout(() => {
+
+    if (input.includes("paris")) {
+      chat.innerHTML = "🇫🇷 Em Paris você pode visitar Torre Eiffel, Museu do Louvre, caminhar no Rio Sena e experimentar cafés locais.";
+    }
+    else if (input.includes("roma")) {
+      chat.innerHTML = "🇮🇹 Em Roma: Coliseu, Fontana di Trevi, Vaticano e gastronomia incrível.";
+    }
+    else if (input.includes("o que fazer")) {
+      chat.innerHTML = "🌍 Explore pontos turísticos, experimente a culinária local e reserve tempo para experiências culturais.";
+    }
+    else {
+      chat.innerHTML = "✈️ Posso te ajudar com pontos turísticos, gastronomia e roteiros personalizados. Pergunte de novo!";
+    }
+  }, 900);
 }
