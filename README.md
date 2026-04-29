@@ -1,4 +1,4 @@
-# 🌱 EcoTrip – Calculadora de Impacto Ambiental para Viagens
+# 🌱 EcoTrip AI – Calculadora Inteligente de Impacto Ambiental
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
 ![CSS](https://img.shields.io/badge/CSS-3-blue)
@@ -12,32 +12,49 @@
 
 ---
 
-## 💡 Visão Geral
+## 🚀 Sobre o Projeto
 
-O **EcoTrip** é uma aplicação web que simula o impacto ambiental de viagens, permitindo calcular a emissão de CO₂ com base na rota e no meio de transporte.
+O **EcoTrip AI** é uma aplicação web que calcula a emissão de CO₂ em viagens e sugere decisões mais sustentáveis com apoio de Inteligência Artificial.
 
-O projeto foi desenvolvido com apoio do **GitHub Copilot**, utilizando IA para acelerar o desenvolvimento, gerar código e estruturar a aplicação.
-
----
-
-## 🚀 Funcionalidades
-
-- Cálculo de emissão de CO₂ por viagem  
-- Comparação entre meios de transporte  
-- Simulação baseada em distância entre cidades  
-- Interface simples e intuitiva  
-- Feedback do impacto ambiental  
+Mais do que uma calculadora, o projeto atua como um **sistema inteligente de apoio à decisão**, ajudando usuários a entender e reduzir seu impacto ambiental.
 
 ---
 
-## 🤖 Uso do GitHub Copilot
+## 💡 Problema
 
-O GitHub Copilot foi utilizado para:
+Grande parte das pessoas não tem visibilidade sobre o impacto ambiental das suas escolhas de transporte.
 
-- Geração de estruturas HTML e CSS  
-- Criação de funções JavaScript  
-- Sugestão de lógica de cálculo  
-- Aceleração do desenvolvimento do projeto  
+---
+
+## 🎯 Solução
+
+O EcoTrip resolve isso ao:
+
+- Calcular emissão de CO₂ com base na rota  
+- Comparar diferentes meios de transporte  
+- Apresentar alternativas mais sustentáveis  
+- Traduzir impacto em métricas compreensíveis (ex: árvores necessárias para compensação)  
+
+---
+
+## 🤖 Uso de Inteligência Artificial
+
+O projeto foi desenvolvido com apoio do **GitHub Copilot**, utilizando IA para:
+
+- Geração de código (HTML, CSS, JavaScript)  
+- Estruturação da aplicação  
+- Criação de funções e lógica de cálculo  
+- Aceleração do desenvolvimento  
+
+---
+
+## 🧠 Funcionalidades
+
+- 🌍 Cálculo de emissão de CO₂  
+- 🚗 Comparação entre transporte (carro, ônibus, avião)  
+- 📊 Feedback visual do impacto ambiental  
+- 🌱 Estimativa de compensação ambiental  
+- ⚡ Interface simples e intuitiva  
 
 ---
 
@@ -46,16 +63,16 @@ O GitHub Copilot foi utilizado para:
 - HTML  
 - CSS  
 - JavaScript  
-- GitHub Copilot  
+- GitHub Copilot (IA aplicada ao desenvolvimento)  
 
 ---
 
 ## 📊 Como Funciona
 
-1. O usuário seleciona origem e destino  
-2. Escolhe o meio de transporte  
+1. O usuário escolhe origem e destino  
+2. Seleciona o meio de transporte  
 3. O sistema calcula a emissão de CO₂  
-4. O resultado é exibido na tela  
+4. Exibe o impacto ambiental e sugestões  
 
 ---
 
@@ -75,7 +92,6 @@ carbon-calculator/
 │
 └── README.md
 
-
 ---
 
 ## 🚀 Deploy
@@ -87,28 +103,24 @@ Acesse o projeto online:
 
 ---
 
-## 🧠 Objetivo
-
-Demonstrar a aplicação prática de desenvolvimento web aliado ao uso de Inteligência Artificial para aumentar produtividade e eficiência.
-
----
-
 ## 🔮 Próximos Passos
 
-- Integração com APIs reais de rotas  
-- Sugestões inteligentes de transporte  
+- Integração com API de rotas (Google Maps)  
+- Sugestões inteligentes com IA  
 - Dashboard de impacto ambiental  
-- Evolução com IA mais avançada  
+- Versão como produto (SaaS ESG)  
 
 ---
 
-## 💼 Valor do Projeto
+## 💼 Valor Estratégico
 
 Este projeto demonstra:
-- Uso prático de IA no desenvolvimento  
-- Automação e ganho de produtividade com Copilot  
-- Estruturação de aplicações web  
-- Visão de produto com impacto sustentável  
+
+- Aplicação prática de Inteligência Artificial no desenvolvimento  
+- Uso de automação para ganho de produtividade  
+- Capacidade de construir soluções com impacto real  
+- Pensamento orientado a produto  
+- Estruturação de sistemas escaláveis  
 
 ---
 
