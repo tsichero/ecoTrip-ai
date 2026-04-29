@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main>
+  <section class="card">
+    <h2>Planeje sua viagem 🌍</h2>
 
-  <title>EcoTrip AI</title>
+    <input id="destination" type="text" placeholder="Digite o destino">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <select id="type">
+      <option value="eco">Sustentável</option>
+      <option value="luxo">Luxo</option>
+      <option value="aventura">Aventura</option>
+    </select>
 
-<body>
+    <button onclick="generateTrip()">Gerar sugestão</button>
 
-  <header>
-    <h1>EcoTrip AI</h1>
-    <p>Planejamento inteligente de viagens sustentáveis</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>Bem-vindo 👋</h2>
-      <p>Seu projeto agora está vivo e estruturado corretamente.</p>
-    </section>
-  </main>
-
-  <footer>
-    <small>© 2026 EcoTrip AI</small>
-  </footer>
-
-  <!-- JS -->
-  <script src="js/app.js"></script>
-
-</body>
-</html>
+    <div id="result"></div>
+  </section>
+</main>
