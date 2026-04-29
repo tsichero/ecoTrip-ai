@@ -4,86 +4,58 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  height: 100vh;
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at top, #1f4037, #99f2c8);
+  min-height: 100vh;
 }
 
-.card {
-  width: 380px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(18px);
-  border-radius: 24px;
-  padding: 28px;
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card, .chat {
+  width: 320px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
   text-align: center;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
-  border: 1px solid rgba(255,255,255,0.2);
-  animation: pop 0.5s ease;
-}
-
-h2 {
-  margin-bottom: 18px;
-  font-size: 22px;
-  letter-spacing: 0.5px;
 }
 
 input, select {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   margin: 8px 0;
-  border-radius: 12px;
+  border-radius: 10px;
   border: none;
-  outline: none;
-  font-size: 14px;
 }
 
 button {
   width: 100%;
-  padding: 12px;
-  margin-top: 12px;
-  border-radius: 12px;
+  padding: 10px;
+  border-radius: 10px;
   border: none;
-  cursor: pointer;
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
   font-weight: bold;
-  color: #000;
-  background: linear-gradient(90deg, #00f2fe, #4facfe);
-  transition: 0.2s;
+  cursor: pointer;
 }
 
 button:hover {
-  transform: scale(1.04);
-  filter: brightness(1.1);
+  transform: scale(1.03);
 }
 
-#result {
-  margin-top: 18px;
-  padding: 14px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.15);
-  min-height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-/* loading state */
-.loading {
-  opacity: 0.7;
-  font-style: italic;
-}
-
-@keyframes pop {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+#result, #chatResult {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  min-height: 50px;
 }
